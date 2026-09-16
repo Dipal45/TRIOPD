@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML Models (too large for git)
+ml/models/saved/*.joblib
+
+# Datasets (do not commit raw data)
+ml/datasets/gait/*.csv
+ml/datasets/voice/*.csv
+ml/datasets/voice/audio/*
+ml/datasets/handwriting/*.csv
+ml/datasets/ppmi/*.csv
+
+# Temporary files
+backend/temp/*
+*.tmp
+*.log
+
+# Environment variables
+.env

@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+scikit-learn
+scipy
+numpy
+pandas
+mediapipe
+opencv-python
+librosa
+scikit-fuzzy
+joblib
+python-dotenv

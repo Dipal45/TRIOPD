@@ -1,0 +1,71 @@
+TRIOPD/
+├── frontend/
+│   ├── public/
+│   │   └── spiral_pattern.svg
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Layout.jsx
+│   │   │   ├── DisclaimerBanner.jsx
+│   │   │   └── ResultCard.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Assessment.jsx
+│   │   │   ├── HandwritingTest.jsx
+│   │   │   ├── WalkingTest.jsx
+│   │   │   ├── VoiceTest.jsx
+│   │   │   ├── Analysis.jsx
+│   │   │   ├── Results.jsx
+│   │   │   ├── About.jsx
+│   │   │   └── MedicalDisclaimer.jsx
+│   │   ├── utils/
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── index.html
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── .env.example
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── routes.py
+│   │   ├── core/
+│   │   │   └── config.py
+│   │   ├── schemas/
+│   │   │   └── models.py
+│   │   ├── services/
+│   │   │   ├── gait_service.py
+│   │   │   ├── voice_service.py
+│   │   │   ├── handwriting_service.py
+│   │   │   └── fusion_service.py
+│   │   └── main.py
+│   ├── requirements.txt
+│   └── .env.example
+├── ml/
+│   ├── datasets/
+│   │   └── README.md
+│   ├── feature_extraction/
+│   │   ├── __init__.py
+│   │   ├── gait_features.py
+│   │   ├── voice_features.py
+│   │   └── handwriting_features.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── train_gait.py
+│   │   ├── train_voice.py
+│   │   ├── train_handwriting.py
+│   │   └── train_severity.py
+│   ├── fusion/
+│   │   ├── __init__.py
+│   │   └── fuzzy_fusion.py
+│   ├── xai/
+│   │   ├── __init__.py
+│   │   └── shap_explainer.py
+│   └── utils.py
+└── tests/
+    ├── conftest.py
+    ├── test_api.py
+    ├── test_feature_extraction.py
+    └── test_fuzzy_logic.py
