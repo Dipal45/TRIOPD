@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'https://triopd.onrender.com/api';
 
 export const analyzeHandwriting = async (trajectory) => {
   const res = await fetch(`${API_BASE}/handwriting/analyze`, {
