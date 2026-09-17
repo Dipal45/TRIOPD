@@ -1,43 +1,73 @@
-# Python
+# ==========================================
+# NODE.JS & REACT (Frontend)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+dist/
+build/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==========================================
+# PYTHON & FASTAPI (Backend)
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+env/
+venv/
+.venv/
+ENV/
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
 *.egg
 
-# Virtual Environment
-.venv/
-venv/
-ENV/
+# ==========================================
+# ML MODELS & DATA (Too Large for Git)
+# ==========================================
+backend/ml/models/*.pkl
+backend/ml/models/*.joblib
+backend/data/
+backend/uploads/
+*.h5
+*.onnx
 
-# IDEs
+# ==========================================
+# IDE & OS FILES
+# ==========================================
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# OS
+*~
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# ML Models (too large for git)
-ml/models/saved/*.joblib
-
-# Datasets (do not commit raw data)
-ml/datasets/gait/*.csv
-ml/datasets/voice/*.csv
-ml/datasets/voice/audio/*
-ml/datasets/handwriting/*.csv
-ml/datasets/ppmi/*.csv
-
-# Temporary files
-backend/temp/*
-*.tmp
-*.log
-
-# Environment variables
-.env
+# ==========================================
+# TESTING & COVERAGE
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
